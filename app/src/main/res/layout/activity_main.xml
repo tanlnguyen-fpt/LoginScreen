@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/fb_icon_round" />
+        app:srcCompat="@mipmap/fb_icon_round"
+        android:contentDescription="@string/todo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -36,14 +37,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="English"
-            android:textColor="#99FFFFFF" />
+            android:text="@string/english"
+            android:textColor="#BBDEFB" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="·"
+            android:text="@string/middleDot"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -51,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Change"
+            android:text="@string/change"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
@@ -73,12 +74,14 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:ems="10"
-            android:hint="Email or Phone"
+            android:hint="@string/email_or_phone"
             android:inputType="textEmailAddress|phone"
+            android:minHeight="48dp"
             android:textColor="#FFFFFF"
-            android:textColorHint="#99FFFFFF"
+            android:textColorHint="#BBDEFB"
             tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="375dp" />
+            tools:layout_editor_absoluteY="375dp"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -87,12 +90,14 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:textColor="#FFFFFF"
             android:textColorHint="#99FFFFFF"
             tools:layout_editor_absoluteX="79dp"
-            tools:layout_editor_absoluteY="456dp" />
+            tools:layout_editor_absoluteY="456dp"
+            android:autofillHints="" />
 
         <Button
             android:id="@+id/button"
@@ -101,7 +106,7 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="#0DFFFFFF"
             android:enabled="false"
-            android:text="LOG IN"
+            android:text="@string/log_in"
             android:textColor="#A6FFFFFF"
             tools:layout_editor_absoluteX="131dp"
             tools:layout_editor_absoluteY="529dp" />
@@ -121,7 +126,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up for Facebook"
+            android:text="@string/sign_up_for_facebook"
             android:textColor="@color/white"
             tools:layout_editor_absoluteX="parent"
             tools:layout_editor_absoluteY="623dp" />
@@ -131,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Forgot Password?"
+            android:text="@string/forgot_password"
             android:textColor="@color/white" />
 
     </LinearLayout>
